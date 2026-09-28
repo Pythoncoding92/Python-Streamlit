@@ -20,10 +20,11 @@ st.set_page_config(
 def get_connection():
     try:
         conn = mysql.connector.connect(
-            host="turntable.proxy.rlwy.net",
-            user="root",
-            password="DSOYOxrCYfqjuhnrkcRWCxFAlTDgRXZF",
-            database="project_1_test"
+            host=st.secrets["mysql"]["host"],
+            port=st.secrets["mysql"]["port"],
+            user=st.secrets["mysql"]["user"],
+            password=st.secrets["mysql"]["password"],
+            database=st.secrets["mysql"]["database"]
         )
         return conn
 
