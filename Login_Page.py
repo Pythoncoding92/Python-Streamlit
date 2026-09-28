@@ -22,7 +22,7 @@ def get_connection():
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="ayansql@1234",
+            password="DSOYOxrCYfqjuhnrkcRWCxFAlTDgRXZF",
             database="project_1_test"
         )
         return conn
